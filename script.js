@@ -76,3 +76,35 @@ const alphaFamilies = (arr) => {
 };
 
 console.log(alphaFamilies(voyagers));
+
+//============================================================================
+
+// 1.
+// We'd like to find the first name which starts with “A” and is longer than 7 letters.
+
+// 2.
+// We'd like to find the all names which starts without “A”.
+
+var names = [
+	'Rakesh',
+	'Antonio',
+	'Alexandra',
+	'Andronicus',
+	'Annam',
+	'Mikey',
+	'Anastasia',
+	'Karim',
+	'Ahmed',
+];
+
+const nameFinder = (arr) => {
+	let firstA = arr.find((name) => name[0].toLowerCase() == 'a');
+	let allA = arr.filter((name) => name[0].toLowerCase() == 'a');
+
+	return `
+    ${firstA} is the first name starting with letter A. 
+    ${allA} are all the names starting with A
+    `;
+};
+
+console.log(nameFinder(names));
