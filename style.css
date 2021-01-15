@@ -1,0 +1,10 @@
+* {
+	background-color: lightskyblue;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	padding: 3rem;
+	font-size: 3rem;
+}
